@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NetLib.Script.NetworkManager" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACCABIEABBAAgAgAAAAAIAgAQAAABAAEAEA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Script\NetworkManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="NetworkObjects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NetLib.Script.Client" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAACAAAAFAAAAAgIAAAAAAIAAAwAAABAQEAEA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Script\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.Script.Server" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUABAAQQSAAIAEAAAAAgCAgAAAAIAAAQAAAAAAEAEI=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Script\Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.XR.XRAnchorManager" Collapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAIBgAQAAACIAAAjBAAkAAQAABAQACAEA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\XR\XRAnchorManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="anchors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NetLib.XR.XRAnchor" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDCBABACIIBAAAgAAARAEAAAAIAAAAAAAQCAAAAEA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\XR\XRAnchor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.Script.NetworkObject" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAIBAAAAAAAQUAAAAAAAACBACAAAAAEBAAAAAEA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Script\NetworkObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="networkBehaviours" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NetLib.Script.NetworkBehaviour" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAADDAAgAAAAABAAAAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Script\NetworkBehaviour.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="networkVars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NetLib.NetworkVar.NetworkVar&lt;T&gt;" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAABAAAAAAAAAAAAAgQAAAAhIQAAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\NetworkVar\NetworkVar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NetLib.Messaging.NetworkMessage" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Messaging\NetworkMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.Messaging.SpawnMessage" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAQAEAAQEAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Messaging\SpawnMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.Messaging.StateUpdateMessage" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAIAAAAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Messaging\StateUpdateMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetLib.Messaging.DestroyMessage" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\Messaging\DestroyMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="NetLib.NetworkVar.INetworkVar" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAQAAAABAQAAAAA=</HashCode>
+      <FileName>D:\Code\BP19-20\Framework\Runtime\NetLib\NetworkVar\INetworkVar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

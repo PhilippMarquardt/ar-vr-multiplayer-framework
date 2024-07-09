@@ -1,0 +1,29 @@
+using System;
+using System.IO;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+public class App
+{
+    // Excercise the Iterator and show that it's more
+    // performant.
+    public static void Main()
+    {
+        TestStreamReaderEnumerable();
+        Console.WriteLine("---");
+        TestReadingFile();
+    }
+
+    public static void TestStreamReaderEnumerable()
+    {
+        // Check the memory before the iterator is used.
+        long memoryBefore = GC.GetTotalMemory(true);
+      IEnumerable<String> stringsFound;
+        // Open a file with the StreamReaderEnumerable and check for a string.
+      try {
+         stringsFound =
+               from line in new StreamReaderEnumerable(@"c:\temp\tempFile.txt")
+               where line.Contains("string to search for")
+               select line;
+         Console.WriteLine("Found: " + stringsFound.Count());

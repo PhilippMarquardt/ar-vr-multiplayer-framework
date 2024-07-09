@@ -1,0 +1,18 @@
+#!/bin/sh
+
+"C:\Program Files\Unity\Hub\Editor\2019.2.11f1\Editor\Unity.exe" -runTests -batchmode -projectPath ./WorldSaverClient -testResults ./build/test-results.xml -testCategory Standard -testPlatform playmode
+
+testresult=$?
+
+if [ $testresult -eq 0 ]; then
+    exit 0
+elif [ $testresult -eq 2 ]; then
+    echo "Some tests failed. Tests must pass before push!"
+    exit 1
+elif [ $testresult -eq 3 ]; then
+    echo "Test run failure. Check Unity for project errors!"
+    exit 1
+else
+    echo "Unknown error"
+    exit 1
+fi
